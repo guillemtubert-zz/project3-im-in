@@ -50,4 +50,4 @@ class Signup extends Component {
   }
 }
 
-export default withAuth(Signup);
+export default withAuth(Signup);// ara el signup té tota la info de withAuth

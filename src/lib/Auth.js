@@ -42,10 +42,10 @@ function withAuthFunc(WrappedComponent) {
 
 // Provider
 class AuthProvider extends React.Component {
-  state = {
+  state = { //Contain data about authentication
     isLoggedIn: false,
     user: null,
-    isLoading: true
+    isLoading: true // 
   };
 
   componentDidMount() {
@@ -75,14 +75,14 @@ class AuthProvider extends React.Component {
 
   logout = () => {
     authService
-      .logout()
+      .logout() // don't need any user information
       .then(() => this.setState({ isLoggedIn: false, user: null }))
       .catch(err => console.log(err));
   };
 
   render() {
     const { isLoading, isLoggedIn, user } = this.state;
-    const { login, logout, signup } = this;
+    const { login, logout, signup } = this; // ho fem mes curt
 
     return (
       <Provider value={{ isLoading, isLoggedIn, user, login, logout, signup }}>
