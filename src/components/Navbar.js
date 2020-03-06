@@ -4,17 +4,19 @@ import { withAuth } from "./../lib/Auth";
 
 class Navbar extends Component {
   render() { // Coming for the AuthProvider via WithAuth
-    const { user, logout, isLoggedIn } = this.props;
+    const { user, 
+      // logout,
+       isLoggedIn } = this.props;
 
     return (
       <nav className="navbar">
-        <Link to={"/"} id="home-btn">
+        {/* <Link to={"/"} id="home-btn">
           <h4>Home</h4>
-        </Link>
+        </Link> */}
         {isLoggedIn ? (
           <>
             <p>username: {user.username}</p>
-            <button onClick={logout}>Logout</button>
+            {/* <button onClick={logout}>Logout</button> */}
           </>
         ) : (
           <>
