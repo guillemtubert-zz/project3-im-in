@@ -7,9 +7,15 @@ import groupsService from "./../lib/groups-service.js";
 
 class Id extends Component {
 
+  state = {
+    group:null
+  }
+
   componentDidMount(){
-    groupsService.getOneGroup(id)
-    .then( (group) => {this.setState({group})})
+    groupsService.getOneGroup()
+    .then( (group) => {
+      console.log(group)
+      this.setState({group})})
     .catch( (err) => console.log(err));
   }
 
