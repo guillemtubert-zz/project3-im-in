@@ -31,6 +31,18 @@ class Groups {
     .get(`/${id}`)
     .then(({data}) => data)
   }
+
+  leaveGroup(groupid){
+    return this.group
+    .put(`/leave/${groupid}`)
+    .then(({data}) => data)
+  }
+
+  deleteGroup(groupid){
+    return this.group
+    .delete(`/delete/${groupid}`)
+    .then(({data}) => data)
+  }
 }
 
 const groupsService = new Groups();
