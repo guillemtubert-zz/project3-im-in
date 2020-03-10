@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { withAuth } from "./../lib/Auth";
 import { Link } from "react-router-dom";
 import groupsService from "./../lib/groups-service.js";
-
+import "../css/groups.css";
 
 class Groups extends Component {
 state={
@@ -20,33 +20,34 @@ componentDidMount(){
 
     return (
       <div>
-        <h1>GROUPS Private route</h1>
-        <h1>Username:{this.props.user.username}</h1>
-        <h2>Groups</h2>
+        <Link to="/private">
+            {" "}
+            <button className="backbutton">Back</button>{" "}
+            </Link>
+        <h1 className="title">Private route:{this.props.user.username}</h1>
+        <div>
         {
           this.state.loading ? 
           null
           :
           (this.state.groups.map(element => {
             return (
-              <div>
+              <div className="groupschart">
                 <Link to={`/groups/${element._id}`}>
                 
-                <h4>{element.name}</h4>
+                <h4 className="element-name">{element.name}</h4>
                 </Link>
-              <p>{element.description}</p>
+              <p className="element-description">{element.description}</p>
               </div>
             )
           })
           )
         }
+        </div>
         
 
 
-            <Link to="/private">
-            {" "}
-            <button className="private">Back</button>{" "}
-            </Link>
+            
     </div>
     );
   }

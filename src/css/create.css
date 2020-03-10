@@ -1,0 +1,30 @@
+.form{
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    font-size: 25px;
+}
+
+.cells{
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.createbuttons{
+    background-color: blueviolet;
+    width: 120px;
+    height: 44px;
+    align-content: center;
+    border-radius: 20px;
+    margin-left: 33%;
+}
+
+.backbuttons{
+    background-color: white;
+    border: 1px solid black;
+    width: 120px;
+    height: 44px;
+    align-content: center;
+    border-radius: 20px;
+    margin-left: 2%;
+}

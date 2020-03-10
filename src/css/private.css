@@ -1,0 +1,13 @@
+.page{
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+    font-size: 25px;
+}
+
+.buttons{
+    border: black 1px solid;
+    width: 70%;
+    height: 44px;
+}

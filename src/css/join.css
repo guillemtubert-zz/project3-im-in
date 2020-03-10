@@ -1,0 +1,30 @@
+.backbutton{
+    background-color: white;
+    border: 1px solid black;
+    width: 120px;
+    height: 44px;
+    align-content: center;
+    border-radius: 20px;
+    margin-left: 2%;
+    margin-top: 5%;
+}
+
+.title{
+    color: pink;
+    text-align: center;
+}
+
+.button{
+    border: black 1px solid;
+    width: 70%;
+    height: 44px;
+}
+
+.form{
+    align-content: center;
+    margin-top: 30%;
+}
+
+.field{
+    border: 1px solid black;
+}

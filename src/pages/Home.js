@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import "../css/home.css";
 import { withAuth } from "./../lib/Auth";
 
 class Login extends Component {
@@ -22,18 +23,24 @@ class Login extends Component {
 
     return (
       <div>
+        <div className="header">
         <h1>HOMEPAGE</h1>
-        <h2>LOGO HERE</h2>
+        <h2>hue </h2>
+        <img src="../../public/logoimin.png" alt="logo" className="logo"/>
+        </div>
 
+        <div>
         <Link to="/login">
               {" "}
-              <button className="navbar-button">Login</button>{" "}
+              <button className="buttons">Login</button>{" "}
             </Link>
             <br />
+            <br/>
             <Link to="/signup">
               {" "}
-              <button className="navbar-button">Sign Up</button>{" "}
+              <button className="buttons">Sign Up</button>{" "}
             </Link>
+            </div>
       </div>
     );
   }

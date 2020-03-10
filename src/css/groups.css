@@ -1,0 +1,37 @@
+.groupschart{
+    border: 1px black solid;
+    background-color: chartreuse;
+    border-radius: 40px;
+    text-align: center;
+    width: 70%;
+    margin-left: 15%;
+
+    
+}
+
+.element-name{
+    font-size: 20px;
+    color: red;
+    margin-top: 10px;
+
+}
+
+.element-description{
+    font-size: 15px;
+    color: blue;
+}
+
+.backbutton{
+    background-color: white;
+    border: 1px solid black;
+    width: 120px;
+    height: 44px;
+    align-content: center;
+    border-radius: 20px;
+    margin-left: 2%;
+    margin-top: 5%;
+}
+
+.title{
+    color: pink;
+}

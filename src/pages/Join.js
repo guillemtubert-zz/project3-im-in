@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { withAuth } from "./../lib/Auth";
 import { Link } from "react-router-dom";
 import groupsService from "./../lib/groups-service.js";
+import "../css/join.css";
+
 
 
 class Join extends Component {
@@ -26,26 +28,30 @@ state = {
 
   render() {
     return (
-      <div>
-        <h1>JOIN PRIVATE ROUTE</h1>
-        <h1>Join {this.props.user.username}</h1>
+        <div>
+         <Link to="/private">
+            {" "}
+            <button className="backbutton">Back</button>{" "}
+            </Link>
+      <div className="form">
+        <h1 className="title">Join {this.props.user.username}</h1>
 
         <form onSubmit={this.handleSubmit}>
 
           <label>Insert code here:</label>
+          <br/>
             <input
+              className="field"
               type="text"
               name="groupid"
               value={this.state.groupid}
               onChange={this.handleChange}
             />
-            <button type="submit">Join group</button>
+            <br/>
+            <br/>
+            <button type="submit" className="button">Join group</button>
           </form>
-
-            <Link to="/private">
-            {" "}
-            <button className="private">Back</button>{" "}
-            </Link>
+          </div>
       </div>
 
     );

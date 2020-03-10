@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { withAuth } from "./../lib/Auth";
 import { Link } from "react-router-dom";
 import groupsService from "./../lib/groups-service.js";
+import "../css/create.css";
 
 
 class Create extends Component {
@@ -30,50 +31,74 @@ class Create extends Component {
   render() {
     return (
       <div>
-        <h1>Create</h1>
-        <h1>{this.props.user.username}</h1>
+        <Link to="/private">
+            {" "}
+            <button className="backbuttons">Back</button>{" "}
+            </Link>
+            <br/>
+            <br/>
+        <h1>Create a group{this.props.user.username}</h1>
 
         <form onSubmit={this.handleSubmit}>
 
+        <div className="form">
+
         <label>Group name:</label>
+        <br/>
           <input
+          className="cells"
             type="text"
             name="name"
             value={this.state.name}
             onChange={this.handleChange}
           />
+        <br/>
+
 
           <label>Description:</label>
+        <br/>
+
           <input
+          className="cells"
+
             type="text"
             name="description"
             value={this.state.description}
             onChange={this.handleChange}
           />
+        <br/>
 
           <label>Duration:</label>
+        <br/>
+
           <input
+          className="cells"
+
             type="number"
             name="duration"
             value={this.state.duration}
             onChange={this.handleChange}
           />
+        <br/>
+
 
           <label>Max Participants:</label>
+        <br/>
+
           <input
+          className="cells"
+
             type="number"
             name="maxParticipants"
             value={this.state.maxParticipants}
             onChange={this.handleChange}
           />
+          </div>
+          <br/>
 
-          <button type="submit">Create group</button>
+          <button type="submit" className="createbuttons">Create group</button>
         </form>
-
-        <Link to="/private">
-            {" "}
-            <button className="private">Back</button>{" "}
-            </Link>
+        <br/>
       </div>
     );
   }

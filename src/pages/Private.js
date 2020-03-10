@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { withAuth } from "./../lib/Auth";
+import "../css/private.css";
+
+
 
 class Private extends Component {
   render() {
@@ -11,26 +14,37 @@ class Private extends Component {
     } = this.props;
 
     return (
-      <div>
-        <h1>Private Route</h1>
+      <div className="page">
+        <br/>
+        <h1>Private </h1>
+        <br/>
         <h1>Welcome {this.props.user.username}</h1>
+        <br/>
 
             <Link to="/groups">
               {" "}
-              <button className="groups">Groups</button>{" "}
+              <button className="buttons">Groups</button>{" "}
             </Link>
+            <br/>
+            <br/>
+
 
             <Link to="/create">
               {" "}
-              <button className="create">Create</button>{" "}
+              <button className="buttons">Create</button>{" "}
             </Link>
+            <br/>
+            <br/>
 
             <Link to="/join">
               {" "}
-              <button className="join">Join</button>{" "}
+              <button className="buttons">Join</button>{" "}
             </Link>
+            <br/>
+            <br/>
 
-            <button onClick={logout}>Logout</button>
+
+            <button onClick={logout} className="buttons">Logout</button>
 
       </div>
     );

@@ -60,6 +60,11 @@ class Id extends Component {
                 <button type='submit'>Leave group</button>
               </form>
 
+              <h1>Username:{this.props.user._id}</h1>
+            <h3>groupinfo: {this.state.group.creator.id}</h3>
+
+
+
               <form onSubmit={this.handleDelete}>
                 <button type='submit'>DELETE group</button>
               </form>
