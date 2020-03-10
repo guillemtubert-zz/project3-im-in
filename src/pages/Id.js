@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { withAuth } from "../lib/Auth";
 import { Link } from "react-router-dom";
 import groupsService from "./../lib/groups-service.js";
+import Chat from "../components/Chat/Chat";
 
 
 
@@ -14,6 +15,7 @@ class Id extends Component {
 
   componentDidMount(){
     const { id } = this.props.match.params;
+    
     groupsService.getOneGroup(id)
     .then( (group) => {
       console.log(group)
@@ -61,13 +63,18 @@ class Id extends Component {
               </form>
 
               <h1>Username:{this.props.user._id}</h1>
-            <h3>groupinfo: {this.state.group.creator.id}</h3>
+              <h3>groupinfo: {this.state.group.creator}</h3>
 
-
-
+              { 
+                (this.props.user._id == this.state.group.creator) ?
               <form onSubmit={this.handleDelete}>
                 <button type='submit'>DELETE group</button>
               </form>
+              :
+              null
+               }
+
+               <Chat username={this.props.user.username} room={this.state.group.name}/>
 
            <Link to="/private">
             {" "}

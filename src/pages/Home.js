@@ -26,7 +26,7 @@ class Login extends Component {
         <div className="header">
         <h1>HOMEPAGE</h1>
         <h2>hue </h2>
-        <img src="../../public/logoimin.png" alt="logo" className="logo"/>
+        <img src="/logoimin.png" alt="logo" className="logo"/>
         </div>
 
         <div>

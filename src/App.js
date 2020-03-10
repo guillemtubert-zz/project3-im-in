@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import { Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
@@ -11,6 +12,8 @@ import Groups from "./pages/Groups";
 import Create from "./pages/Create";
 import Join from "./pages/Join";
 import Id from "./pages/Id";
+import JoinChat from './components/Join/Join';
+import Chat from './components/Chat/Chat'
 
 
 
@@ -35,6 +38,8 @@ class App extends Component {
           <PrivateRoute exact path="/create" component={Create} />
           <PrivateRoute exact path="/join" component={Join} />
           <PrivateRoute exact path="/groups/:id" component={Id} />
+          {/* <Route path="/joinchat" exact component={JoinChat} />
+          <Route path="/chat" component={Chat} /> */}
 
 
 
