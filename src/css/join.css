@@ -27,4 +27,19 @@
 
 .field{
     border: 1px solid black;
+    
+}
+
+.entire{
+    background-color: #EDF1F4;
+    padding: 0;
+    overflow-y: scroll;
+}
+
+.joinbutton{
+    background-color: red;
+    color: seashell;
+    border-radius: 20px;
+    width: 50%;
+    height: 44px;
 }

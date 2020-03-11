@@ -1,10 +1,35 @@
 .buttons{
+    margin-top: 30px;
     width: 70%;
     height: 44px;
     margin-left: 15%;
+    background-color: salmon;
+    color: yellow;
 }
 
 .header{
     align-content: center;
     text-align: center;
+}
+
+.homepage{
+    color: red;
+}
+
+.logoheader{
+    width: 280px;
+    height: 280px;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.entire{
+    background-color: #EDF1F4;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+.container{
+    padding: 0;
 }

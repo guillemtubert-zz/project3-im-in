@@ -28,7 +28,7 @@ state = {
 
   render() {
     return (
-        <div>
+        <div className="entire">
          <Link to="/private">
             {" "}
             <button className="backbutton">Back</button>{" "}
@@ -49,7 +49,7 @@ state = {
             />
             <br/>
             <br/>
-            <button type="submit" className="button">Join group</button>
+            <button type="submit" className="joinbutton">Join group</button>
           </form>
           </div>
       </div>

@@ -12,9 +12,14 @@
     justify-content: space-between;
     background: #FFFFFF;
     border-radius: 8px;
-    height: 60%;
+    height: 60% ;
     width: 35%;
   }
+.css-y1c0xs, .css-13azwyo{
+  height: 250px;
+  max-height: 250px;
+}
+
   
   @media (min-width: 320px) and (max-width: 480px) {
     .outerContainer {

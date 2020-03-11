@@ -3,26 +3,23 @@
     background-color: chartreuse;
     border-radius: 40px;
     text-align: center;
+    align-items: center;
     width: 70%;
-    margin-left: 15%;
-
-    
+    margin: 20px 0px 20px 16%;
 }
 
 .element-name{
-    font-size: 20px;
+    font-size: 25px;
     color: red;
-    margin-top: 10px;
-
+    margin-top: 5px;
 }
 
 .element-description{
-    font-size: 15px;
+    font-size: 18px;
     color: blue;
 }
 
 .backbutton{
-    background-color: white;
     border: 1px solid black;
     width: 120px;
     height: 44px;
@@ -30,8 +27,26 @@
     border-radius: 20px;
     margin-left: 2%;
     margin-top: 5%;
+    color: red;
 }
 
 .title{
     color: pink;
+}
+
+.entire{
+    background-color: #EDF1F4;
+    padding: 0;
+    overflow-y: scroll;
+    align-items: center;
+
+}
+
+.container{
+    padding: 0;
+}
+
+.h2text{
+    text-align: center;
+    color: violet;
 }

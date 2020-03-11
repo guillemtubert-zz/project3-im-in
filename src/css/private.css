@@ -8,6 +8,28 @@
 
 .buttons{
     border: black 1px solid;
-    width: 70%;
+    width: 60%;
     height: 44px;
+    background-color: tomato;
+    color: turquoise;
+    font-size: 27px;
+    align-items: center;
+    margin-left: 21%;
+}
+
+.entire{
+    background-color: #EDF1F4;
+    padding: 0;
+    overflow: hidden;
+    align-items: center;
+
+}
+
+.container{
+    padding: 0;
+}
+
+.welcome{
+    text-align: center;
+    margin: 25px;
 }

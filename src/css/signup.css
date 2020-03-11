@@ -1,0 +1,46 @@
+.formulari{
+    border: 1px solid black;
+    height: 44px;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.userpw{
+    font-size: 34px;
+    margin-left: 27%;
+}
+
+.signup-button{
+    border: 1px solid black;
+    margin-top: 20px;
+    width: 40%;
+    height: 44px;
+    margin-left: 30%;
+}
+
+.haveaccount{
+    color: coral;
+    text-align: center;
+    
+    }
+    
+.accountLink{
+    color: green;
+    }
+
+.signuptext{
+    text-align: center;
+    margin-top: 10%;
+}
+
+.entire{
+    background-color: #EDF1F4;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+.container{
+    padding: 0;
+}

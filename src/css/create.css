@@ -8,23 +8,43 @@
 .cells{
     border-radius: 20px;
     border: 1px solid black;
+    width: 70%;
+    margin-left: 15%;
 }
 
 .createbuttons{
     background-color: blueviolet;
-    width: 120px;
+    width: 150px;
     height: 44px;
     align-content: center;
     border-radius: 20px;
-    margin-left: 33%;
+    margin-left: 30%;
+    margin-top: 15px;
 }
 
-.backbuttons{
-    background-color: white;
+.backbuttonX{
+    background-color: red;
     border: 1px solid black;
     width: 120px;
     height: 44px;
     align-content: center;
     border-radius: 20px;
     margin-left: 2%;
+    margin-top: 10px;
+}
+
+.createtitle{
+    color: green;
+    margin: 20px;
+    text-align: center;
+}
+
+.entire{
+    background-color: #EDF1F4;
+    padding: 0;
+    overflow-y: scroll;
+}
+
+.form-titles{
+    margin: 5px;
 }

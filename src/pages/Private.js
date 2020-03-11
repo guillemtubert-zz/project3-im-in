@@ -14,11 +14,12 @@ class Private extends Component {
     } = this.props;
 
     return (
-      <div className="page">
+      <div className="entire">
         <br/>
-        <h1>Private </h1>
-        <br/>
-        <h1>Welcome {this.props.user.username}</h1>
+        <div className="welcome">
+        <h1>Welcome back,</h1>
+        <h2>{this.props.user.username}</h2>
+        </div>
         <br/>
 
             <Link to="/groups">

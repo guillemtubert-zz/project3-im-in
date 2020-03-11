@@ -23,14 +23,15 @@ class Login extends Component {
     const { username, password } = this.state;
 
     return (
-      <div>
-        <h1>Login</h1>
-        <img src="src/css/logoimin.png" alt="logo" className="logo"/>
+      <div className="entire">
+        <img src="/logoimin.png" alt="logo" className="logo"/>
+        <h1 className="loginlogo">Login</h1>
 
         <form onSubmit={this.handleFormSubmit}>
-          <label>Username:</label>
+          <label className="userpw">Username:</label>
           <br/>
           <input
+            className="login-form"
             type="text"
             name="username"
             value={username}
@@ -38,9 +39,10 @@ class Login extends Component {
           />
           <b></b>
 
-          <label>Password:</label>
+          <label className="userpw">Password:</label>
           <br/>
           <input
+            className="login-form"
             type="password"
             name="password"
             value={password}
@@ -48,12 +50,14 @@ class Login extends Component {
           />
           <br/>
 
-          <input type="submit" value="Login" />
+          <input type="submit" value="Login" className="login-button" />
         </form>
         <br/>
-        <p>Don't have an account?</p>
-        <Link to={"/signup"}> Signup</Link>
+        <p className="donthaveaccount">Don't have an account?
+        <Link to={"/signup"} className='notaccountLink'> Signup</Link>
+        </p>
       </div>
+
     );
   }
 }

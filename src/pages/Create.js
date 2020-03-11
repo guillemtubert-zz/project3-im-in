@@ -30,21 +30,20 @@ class Create extends Component {
   
   render() {
     return (
-      <div>
+      <div className="entire">
         <Link to="/private">
             {" "}
-            <button className="backbuttons">Back</button>{" "}
+            <button className="backbuttonX">Back</button>{" "}
             </Link>
-            <br/>
-            <br/>
-        <h1>Create a group{this.props.user.username}</h1>
+        <h1 className="createtitle">Create a group</h1>
+
+        {/* {this.props.user.username} */}
 
         <form onSubmit={this.handleSubmit}>
 
         <div className="form">
 
-        <label>Group name:</label>
-        <br/>
+        <label className="form-titles">Group name:</label>
           <input
           className="cells"
             type="text"
@@ -52,11 +51,8 @@ class Create extends Component {
             value={this.state.name}
             onChange={this.handleChange}
           />
-        <br/>
 
-
-          <label>Description:</label>
-        <br/>
+          <label className="form-titles">Description:</label>
 
           <input
           className="cells"
@@ -66,10 +62,8 @@ class Create extends Component {
             value={this.state.description}
             onChange={this.handleChange}
           />
-        <br/>
 
-          <label>Duration:</label>
-        <br/>
+          <label className="form-titles">Duration:</label>
 
           <input
           className="cells"
@@ -79,11 +73,8 @@ class Create extends Component {
             value={this.state.duration}
             onChange={this.handleChange}
           />
-        <br/>
 
-
-          <label>Max Participants:</label>
-        <br/>
+          <label className="form-titles">Max Participants:</label>
 
           <input
           className="cells"
@@ -94,11 +85,9 @@ class Create extends Component {
             onChange={this.handleChange}
           />
           </div>
-          <br/>
 
           <button type="submit" className="createbuttons">Create group</button>
         </form>
-        <br/>
       </div>
     );
   }

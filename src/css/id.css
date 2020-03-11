@@ -1,0 +1,62 @@
+.entire{
+    background-color: #EDF1F4;
+    padding: 0;
+    overflow-y: scroll;
+}
+
+.backbuttonG{
+    background-color: white;
+    border: 1px solid black;
+    width: 120px;
+    height: 44px;
+    align-content: center;
+    border-radius: 20px;
+    margin-left: 2%;
+    margin-top: 5%;
+}
+
+.groupname{
+    color: pink;
+    text-align: center;
+    font-size: 30px;
+}
+
+.leavegroup{
+    background-color: white;
+    border: 1px solid black;
+    width: 120px;
+    height: 44px;
+    align-content: center;
+    border-radius: 20px;
+}
+
+.description{
+    font-size: 20px;
+}
+
+.lastbuttons{
+    
+flex-direction: row;
+display: flex;
+justify-content: space-around;
+margin: 15px;}
+
+.deletebtn{
+    background-color: white;
+    border: 1px solid black;
+    width: 120px;
+    height: 44px;
+    align-content: center;
+    border-radius: 20px;
+}
+
+
+.participantsTitle{
+    color: pink;
+    margin-left: 10px;
+}
+
+.participants{
+   color: green;
+   margin-left: 15px;
+}

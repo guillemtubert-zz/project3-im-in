@@ -3,6 +3,7 @@ import { withAuth } from "../lib/Auth";
 import { Link } from "react-router-dom";
 import groupsService from "./../lib/groups-service.js";
 import Chat from "../components/Chat/Chat";
+import "../css/id.css";
 
 
 
@@ -46,40 +47,47 @@ class Id extends Component {
 
   render() {
             return (
+              
 
               this.state.isLoading ?
               null :
-              <div>
-           <h1>GROUP id </h1>
-            <h3>groupinfo: {this.state.group.name}</h3>
-            <h3>participants:</h3> {this.state.group.participants.map(
+              <div className="entire">
+
+            <Link to="/private">
+            {" "}
+            <button className="private" className="backbuttonG">Back</button>{" "}
+            </Link>
+
+            <h3 className="groupname"> {this.state.group.name}</h3>
+              <p className="description">{this.state.group.description}</p>
+            <h3 className="participantsTitle">Participants</h3> {this.state.group.participants.map(
               element => {
-                return <p>{element.username}</p>
+                return <p className="participants">- {element.username}</p>
               }
             )}
 
-              <form onSubmit={this.handleSubmit}>
-                <button type='submit'>Leave group</button>
+          
+
+              {/* <h1>Username:{this.props.user._id}</h1> */}
+
+              
+
+               <Chat username={this.props.user.username} room={this.state.group.name}/>
+
+              <div className="lastbuttons">
+               <form onSubmit={this.handleSubmit}>
+                <button type='submit' className="leavegroup">Leave group</button>
               </form>
-
-              <h1>Username:{this.props.user._id}</h1>
-              <h3>groupinfo: {this.state.group.creator}</h3>
-
               { 
                 (this.props.user._id == this.state.group.creator) ?
               <form onSubmit={this.handleDelete}>
-                <button type='submit'>DELETE group</button>
+                <button type='submit' className="deletebtn">Delete group</button>
               </form>
               :
               null
                }
-
-               <Chat username={this.props.user.username} room={this.state.group.name}/>
-
-           <Link to="/private">
-            {" "}
-            <button className="private">Back</button>{" "}
-            </Link>
+               </div>
+           
     </div>
     );
   }

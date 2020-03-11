@@ -73,14 +73,14 @@ const Chat = (props) => { //location
   return (
     <div>
       
-      <div className="outerContainer">
-        <div className="container">
+      {/* <div className="outerContainer"> */}
+        <div className="">
             <InfoBar room={room} />
-            <Messages messages={messages} username={username} />
+            <Messages className="loqsea" messages={messages} username={username} />
             <Input message={message} setMessage={setMessage} sendMessage={sendMessage} />
         </div>
       </div>
-    </div>
+    // </div>
   );
 }
 

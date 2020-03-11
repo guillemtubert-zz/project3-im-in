@@ -22,11 +22,10 @@ class Login extends Component {
     // const { username, password } = this.state;
 
     return (
-      <div>
+      <div className="entire">
         <div className="header">
-        <h1>HOMEPAGE</h1>
-        <h2>hue </h2>
-        <img src="/logoimin.png" alt="logo" className="logo"/>
+        <h1 className='homepage'>HOMEPAGE</h1>
+        <img src="/logoimin.png" alt="logo" className="logoheader"/>
         </div>
 
         <div>

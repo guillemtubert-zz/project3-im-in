@@ -1,0 +1,53 @@
+.logo{
+    width: 280px;
+    height: 280px;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.login-button{
+    border: 1px solid black;
+    margin-top: 20px;
+    width: 40%;
+    height: 44px;
+    margin-left: 30%;
+}
+
+.userpw{
+    font-size: 34px;
+    margin-left: 27%;
+}
+
+.login-form{
+    border: 1px solid black;
+    margin-left: 15%;
+    width: 70%;
+    height: 44px;
+}
+.donthaveaccount{
+color: coral;
+text-align: center;
+
+}
+
+.notaccountLink{
+color: green;
+
+}
+
+.entire{
+    background-color: #EDF1F4;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+.container{
+    padding: 0;
+}
+
+.loginlogo{
+    text-align: center;
+}
+
+/* background-color: #EDF1F4; */
