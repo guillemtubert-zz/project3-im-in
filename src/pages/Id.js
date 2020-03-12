@@ -70,11 +70,14 @@ class Id extends Component {
 
             
               <p className="description">{this.state.group.description}</p>
-            <h3 className="participantsTitle">Participants</h3> {this.state.group.participants.map(
+            <h3 className="participantsTitle">Participants</h3>
+            <div className="participants-box">
+             {this.state.group.participants.map(
               element => {
                 return <p className="participants">- {element.username}</p>
               }
             )}
+            </div>
 
           
 

@@ -15,6 +15,7 @@
     border-radius: 20px;
     margin-top: 5%;
     padding: 0;
+    margin-right: 110px;
 }
 
 .groupname{
@@ -40,8 +41,10 @@
 
 .copybtn{
     color: white;
-    border: 1px solid #8EDCF2;
+    border: 3px solid #8EDCF2;
     border-radius: 10px;
+    background-color: #0F2025;
+    /* margin-left: 60%; */
 }
 
 .lastbuttons{
@@ -71,4 +74,12 @@ margin: 15px;}
 .participants{
    color: white;
    margin-left: 15px;
+   font-size: 18px;
+   display: inline-block;
+
+}
+
+.participants-box{
+    max-height: 15%;
+    overflow-y: scroll;
 }
