@@ -10,7 +10,7 @@ import Input from '../Input/Input';
 
 import './Chat.css';
 
-let socket;
+let socket= io();
 
 
 const Chat = (props) => { //location
