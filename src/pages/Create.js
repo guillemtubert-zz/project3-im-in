@@ -30,12 +30,12 @@ class Create extends Component {
   
   render() {
     return (
-      <div className="entire">
+      <div className="full-page">
         <Link to="/private">
             {" "}
-            <button className="backbuttonX">Back</button>{" "}
+            <button className="backbuttonX">BACK</button>{" "}
             </Link>
-        <h1 className="createtitle">Create a group</h1>
+        <h1 className="createtitle">CREATE</h1>
 
         {/* {this.props.user.username} */}
 
@@ -43,7 +43,7 @@ class Create extends Component {
 
         <div className="form">
 
-        <label className="form-titles">Group name:</label>
+        <label className="fillingText">Group name</label>
           <input
           className="cells"
             type="text"
@@ -52,7 +52,7 @@ class Create extends Component {
             onChange={this.handleChange}
           />
 
-          <label className="form-titles">Description:</label>
+          <label className="fillingText">Description</label>
 
           <input
           className="cells"
@@ -63,7 +63,7 @@ class Create extends Component {
             onChange={this.handleChange}
           />
 
-          <label className="form-titles">Duration:</label>
+          <label className="fillingText">Duration (H)</label>
 
           <input
           className="cells"
@@ -74,7 +74,7 @@ class Create extends Component {
             onChange={this.handleChange}
           />
 
-          <label className="form-titles">Max Participants:</label>
+          <label className="fillingText">Max Participants</label>
 
           <input
           className="cells"
@@ -86,7 +86,7 @@ class Create extends Component {
           />
           </div>
 
-          <button type="submit" className="createbuttons">Create group</button>
+          <button type="submit" className="createbuttons">CREATE</button>
         </form>
       </div>
     );

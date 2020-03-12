@@ -16,8 +16,13 @@
     width: 35%;
   }
 .css-y1c0xs, .css-13azwyo{
+  background-color: white;
   height: 250px;
   max-height: 250px;
+  border-radius: 10px;
+
+  /* height: 250px;
+  max-height: 250px; */
 }
 
   

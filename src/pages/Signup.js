@@ -23,7 +23,7 @@ class Signup extends Component {
     const { username, password } = this.state;
     return (
       <div className='entire'>
-        <h1 className="signuptext">Sign Up</h1>
+        <h1 className="signuptext">SIGN UP</h1>
 <br/>
         <form onSubmit={this.handleFormSubmit}>
           <br/>

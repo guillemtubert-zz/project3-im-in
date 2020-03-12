@@ -14,38 +14,30 @@ class Private extends Component {
     } = this.props;
 
     return (
-      <div className="entire">
-        <br/>
+      <div className="full-page">
         <div className="welcome">
         <h1>Welcome back,</h1>
         <h2>{this.props.user.username}</h2>
         </div>
-        <br/>
 
             <Link to="/groups">
               {" "}
-              <button className="buttons">Groups</button>{" "}
+              <button className="seegroups">See groups</button>{" "}
             </Link>
-            <br/>
-            <br/>
-
-
+        
+            <div className="row">
             <Link to="/create">
               {" "}
-              <button className="buttons">Create</button>{" "}
+              <button className="create-btn">Create</button>{" "}
             </Link>
-            <br/>
-            <br/>
-
+           
             <Link to="/join">
               {" "}
-              <button className="buttons">Join</button>{" "}
+              <button className="join-btn">Join</button>{" "}
             </Link>
-            <br/>
-            <br/>
+            </div>
 
-
-            <button onClick={logout} className="buttons">Logout</button>
+            <button onClick={logout} className="logout">Logout</button>
 
       </div>
     );

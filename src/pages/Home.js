@@ -24,20 +24,20 @@ class Login extends Component {
     return (
       <div className="entire">
         <div className="header">
-        <h1 className='homepage'>HOMEPAGE</h1>
+        {/* <h1 className='homepage'>HOMEPAGE</h1> */}
         <img src="/logoimin.png" alt="logo" className="logoheader"/>
         </div>
 
         <div>
         <Link to="/login">
               {" "}
-              <button className="buttons">Login</button>{" "}
+              <button className="loginbtn">Login</button>{" "}
             </Link>
             <br />
             <br/>
             <Link to="/signup">
               {" "}
-              <button className="buttons">Sign Up</button>{" "}
+              <button className="signupbtn">Sign Up</button>{" "}
             </Link>
             </div>
       </div>

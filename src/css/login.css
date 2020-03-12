@@ -1,12 +1,16 @@
 .logo{
-    width: 280px;
-    height: 280px;
+    width: 250px;
+    height: 250px;
     align-items: center;
-    margin-left: 40px;
+    margin-left: 60px;
 }
 
 .login-button{
-    border: 1px solid black;
+    border: 3px solid #FBD249;
+    background-color: #0F2025;
+    font-size: 26px;
+    border-radius: 10px;
+    color: white;
     margin-top: 20px;
     width: 40%;
     height: 44px;
@@ -15,23 +19,26 @@
 
 .userpw{
     font-size: 34px;
-    margin-left: 27%;
+    margin-left: 15%;
+    color: white;
+    margin-top: 10px;
 }
 
 .login-form{
-    border: 1px solid black;
+    border: 1px solid #0F2025;
     margin-left: 15%;
+    border-radius: 10px;
     width: 70%;
     height: 44px;
 }
 .donthaveaccount{
-color: coral;
+color: white;
 text-align: center;
 
 }
 
 .notaccountLink{
-color: green;
+color: #8EDCF2;
 
 }
 
@@ -48,6 +55,7 @@ color: green;
 
 .loginlogo{
     text-align: center;
+    color: white;
 }
 
 /* background-color: #EDF1F4; */

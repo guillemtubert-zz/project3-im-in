@@ -6,30 +6,78 @@
     font-size: 25px;
 }
 
-.buttons{
-    border: black 1px solid;
-    width: 60%;
-    height: 44px;
-    background-color: tomato;
-    color: turquoise;
+.seegroups{
+    border: #8EDCF2 3px solid;
+    width: 70%;
+    height: 70px;
+    background-color: #0F2025;
+    color: #fff;
+    border-radius: 15px;
     font-size: 27px;
     align-items: center;
-    margin-left: 21%;
+    margin-left: 15%;
+    margin-top: 17%;
 }
 
 .entire{
-    background-color: #EDF1F4;
+    background-color: #0F2025;
     padding: 0;
     overflow: hidden;
     align-items: center;
+}
 
+.full-page{
+    background-color: #0F2025;
+    height: 100%;
 }
 
 .container{
     padding: 0;
 }
 
+.join-btn{
+    /* border: 1px black solid; */
+    background-color: #8EDCF2;
+    color: white;
+    border-radius: 15px;
+    font-size: 27px;
+    margin: 15px;
+    width: 120px;
+    height: 80px;
+}
+
+.create-btn{
+    /* border: 1px black solid; */
+    background-color: #FBD249;
+    color: white;
+    border-radius: 15px;
+    font-size: 27px;
+    margin: 13px;
+    width: 120px;
+    height: 80px;
+}
+
+.row{
+    margin-left: 43px ;
+}
+
+
 .welcome{
     text-align: center;
     margin: 25px;
+    color: thistle;
+    margin-top: 15%;
 }
+
+.logout{
+    border: #FBD249 3px solid;
+    width: 70%;
+    height: 70px;
+    background-color: #0F2025;
+    color: #fff;
+    border-radius: 15px;
+    font-size: 27px;
+    align-items: center;
+    margin-left: 15%;
+}
+

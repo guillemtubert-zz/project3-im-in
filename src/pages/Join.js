@@ -28,17 +28,19 @@ state = {
 
   render() {
     return (
-        <div className="entire">
+        <div className="allpage">
+          {/* <div className="row"> */}
          <Link to="/private">
             {" "}
-            <button className="backbutton">Back</button>{" "}
+            <button className="backbutton">BACK</button>{" "}
             </Link>
+        <h1 className="title">JOIN </h1>
+        {/* </div> */}
       <div className="form">
-        <h1 className="title">Join {this.props.user.username}</h1>
 
         <form onSubmit={this.handleSubmit}>
 
-          <label>Insert code here:</label>
+          <label className="entercode">Enter Code</label>
           <br/>
             <input
               className="field"
@@ -49,9 +51,10 @@ state = {
             />
             <br/>
             <br/>
-            <button type="submit" className="joinbutton">Join group</button>
+            <button type="submit" className="joinbutton">JOIN</button>
           </form>
           </div>
+          {/* {this.props.user.username} */}
       </div>
 
     );

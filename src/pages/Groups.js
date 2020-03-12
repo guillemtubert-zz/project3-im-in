@@ -42,13 +42,13 @@ componentDidMount(){
   render() {
 
     return (
-      <div className="entire">
+      <div className="full-website">
         <Link to="/private">
             {" "}
-            <button className="backbutton">Back</button>{" "}
+            <button className="backbutton">BACK</button>{" "}
             </Link>
         {/* <h1 className="title">{this.props.user.username}</h1> */}
-        <h2 className="h2text">Groups</h2>
+        <h2 className="h2text">GROUPS</h2>
         <div>
         {
           this.state.loading ? 

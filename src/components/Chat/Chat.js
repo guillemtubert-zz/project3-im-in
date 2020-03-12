@@ -75,7 +75,7 @@ const Chat = (props) => { //location
       
       {/* <div className="outerContainer"> */}
         <div className="">
-            <InfoBar room={room} />
+            {/* <InfoBar room={room} /> */}
             <Messages className="loqsea" messages={messages} username={username} />
             <Input message={message} setMessage={setMessage} sendMessage={sendMessage} />
         </div>

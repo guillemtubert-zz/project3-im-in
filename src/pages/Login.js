@@ -25,7 +25,7 @@ class Login extends Component {
     return (
       <div className="entire">
         <img src="/logoimin.png" alt="logo" className="logo"/>
-        <h1 className="loginlogo">Login</h1>
+        <h1 className="loginlogo">LOGIN</h1>
 
         <form onSubmit={this.handleFormSubmit}>
           <label className="userpw">Username:</label>

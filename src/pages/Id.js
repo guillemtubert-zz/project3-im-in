@@ -55,7 +55,7 @@ class Id extends Component {
 
             <Link to="/private">
             {" "}
-            <button className="private" className="backbuttonG">Back</button>{" "}
+            <button className="private" className="backbuttonG">BACK</button>{" "}
             </Link>
 
             <h3 className="groupname"> {this.state.group.name}</h3>
@@ -76,12 +76,12 @@ class Id extends Component {
 
               <div className="lastbuttons">
                <form onSubmit={this.handleSubmit}>
-                <button type='submit' className="leavegroup">Leave group</button>
+                <button type='submit' className="leavegroup">LEAVE</button>
               </form>
               { 
                 (this.props.user._id == this.state.group.creator) ?
               <form onSubmit={this.handleDelete}>
-                <button type='submit' className="deletebtn">Delete group</button>
+                <button type='submit' className="deletebtn">DELETE</button>
               </form>
               :
               null
