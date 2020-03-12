@@ -3,6 +3,7 @@ import { withAuth } from "../lib/Auth";
 import { Link } from "react-router-dom";
 import groupsService from "./../lib/groups-service.js";
 import Chat from "../components/Chat/Chat";
+import {CopyToClipboard} from 'react-copy-to-clipboard';
 import "../css/id.css";
 
 
@@ -53,12 +54,21 @@ class Id extends Component {
               null :
               <div className="entire">
 
-            <Link to="/private">
-            {" "}
-            <button className="private" className="backbuttonG">BACK</button>{" "}
-            </Link>
+           
+                <Link to="/private">
+                {" "}
+                <button className="backbuttonG">BACK</button>{" "}
+                </Link>
+
+            <CopyToClipboard text={this.state.group && this.state.group._id}>
+              <button className="copybtn">COPY CODE</button>
+            </CopyToClipboard>
+
 
             <h3 className="groupname"> {this.state.group.name}</h3>
+
+
+            
               <p className="description">{this.state.group.description}</p>
             <h3 className="participantsTitle">Participants</h3> {this.state.group.participants.map(
               element => {

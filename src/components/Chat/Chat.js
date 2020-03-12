@@ -18,7 +18,7 @@ const Chat = (props) => { //location
   const [room, setRoom] = useState('');
   const [message, setMessage] = useState('');
   const [messages, setMessages] = useState([]);
-  const ENDPOINT = 'http://localhost:5000';
+  const ENDPOINT = process.env.REACT_APP_API_URL;
   // console.log("PROPS", props);
   // console.log("message---", message);
   // console.log("messages---", messages);
