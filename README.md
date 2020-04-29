@@ -165,10 +165,8 @@ The url to your repository and to your deployed project
 
 [Server repository Link](https://github.com/screeeen/project-server) TBD
 
-[Deployed App Link](http://heroku.com) tbd
+[Deployed App Link](https://m3-im-in.herokuapp.com/) 
 
 ### Slides
-
-The url to your presentation slides
 
 [Slides Link](https://docs.google.com/presentation/d/17yvSXmm0FoUZZ1iBAVtst0ZhFaA5WU5Ufwm87lc7zJw/edit?usp=sharing)
